@@ -9,7 +9,6 @@ public class Würfelspiel {
         Scanner scanner = new Scanner(System.in);
         int selection = scanner.nextInt();
 
-
         if (selection==6) {
             Random random = new Random();
 
