@@ -2,6 +2,8 @@ package at.tsj.projects.OO.Auto;
 
 import at.tsj.projects.OO.Auto.objects.Car;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         int a = 7;
@@ -11,6 +13,7 @@ public class Main {
         c1.fuelConsumption = 7;
         c1.serialNumber = "A1234";
         c1.fuelAmount = 70;
+        c1.fuelLeft = 70;
 
 
         Car c2 = new Car();
@@ -18,10 +21,23 @@ public class Main {
         c2.fuelConsumption = 6;
         c2.serialNumber = "M1234";
         c2.fuelAmount = 20;
+        c2.fuelLeft = 20;
 
-        System.out.println(c2.fuelAmount);
-        c2.drive();
-        System.out.println(c2.fuelAmount);
+
+  /*      Scanner scanner = new Scanner(System.in);
+        int amountofRepetitions = scanner.nextInt();
+
+        for (int i = amountofRepetitions; i > 0; i--) {
+            c1.honk();
+        }
+*/
+
+c2.getRemainingRange();
+        c1.drive();
+        System.out.println(c1.fuelLeft);
+        System.out.println(c1.fuelConsumption);
+c1.getRemainingRange();
+
 
 
     }
