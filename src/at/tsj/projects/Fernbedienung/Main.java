@@ -8,8 +8,6 @@ public class Main {
     Battery battery = new Battery(100,100);
     Battery battery2 = new Battery(100,100);
     Fernbedienung fernbedienung = new Fernbedienung(battery,battery2);
-        fernbedienung.setBattery(battery);
-        fernbedienung.setBattery2(battery2);
         System.out.println(fernbedienung.getStatus());
 
 
