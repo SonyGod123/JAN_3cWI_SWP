@@ -3,6 +3,7 @@ package at.tsj.projects.Cars;
 import at.tsj.projects.Cars.Objekte.Car;
 import at.tsj.projects.Cars.Objekte.Engine;
 import at.tsj.projects.Cars.Objekte.Producer;
+import at.tsj.projects.Cars.Objekte.Truck;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +13,11 @@ public class Main {
 
        car.discount();
        car.Consumption();
+        Engine engine1 = new Engine(Engine.TYPE.DIESEL, 300);
+        Producer producer1 = new Producer("Mercedes","Germany",10);
 
+        Truck t1 = new Truck("red",500,2000000,6.5,4, engine1, producer1, "trailer" );
+        System.out.println(t1.getTrailer());
     }
+
 }
