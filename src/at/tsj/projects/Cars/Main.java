@@ -18,6 +18,8 @@ public class Main {
 
         Truck t1 = new Truck("red",500,2000000,6.5,4, engine1, producer1, "trailer" );
         System.out.println(t1.getTrailer());
+
+        t1.drive();
     }
 
 }
