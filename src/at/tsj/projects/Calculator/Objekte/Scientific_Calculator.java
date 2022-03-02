@@ -9,5 +9,4 @@ public class Scientific_Calculator extends Calculator {
         return Math.cos(a);
     }
 
-
 }
