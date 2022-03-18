@@ -19,4 +19,5 @@ public class SavingsAccount {
         this.balance -= amount;
         return amount;
     }
+
 }
