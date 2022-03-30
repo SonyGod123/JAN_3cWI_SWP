@@ -3,6 +3,7 @@ package at.tsj.projects.Accounts.Objekte;
 public class SavingsAccount {
     private double balance;
 
+
     public double getBalance() {
         return balance;
     }
