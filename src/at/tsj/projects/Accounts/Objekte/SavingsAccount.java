@@ -1,24 +1,27 @@
 package at.tsj.projects.Accounts.Objekte;
 
-public class SavingsAccount {
-    private double balance;
+public class SavingsAccount extends BaseAccount{
 
+    private double savingYears;
+    private double rateOfInterest;
 
-    public double getBalance() {
-        return balance;
+    public SavingsAccount(double balance, double savingYears, double rateOfInterest){
+        super(balance);
+        this.savingYears = savingYears;
+        this.rateOfInterest = rateOfInterest;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void accountInterest(){
+        double accountInterest = (this.getBalance() * this.rateOfInterest) * this.savingYears;
+        System.out.println("Sie haben in den letzten " + this.savingYears + " Jahr " + accountInterest + "€ Zinsen erhalten.");
+        setBalance(getBalance()* accountInterest);
     }
 
-    public void deposit(double amount){
-        this.balance += amount;
+    public double getSavingYears(){
+        return savingYears;
     }
 
-    public double withdraw(double amount){
-        this.balance -= amount;
-        return amount;
+    public double getRateOfInterest(){
+        return rateOfInterest;
     }
-
 }

@@ -1,25 +1,18 @@
 package at.tsj.projects.Accounts.Objekte;
 
-public class CheckingsAccount {
-    public class CheckingsAccount extends BaseAccount {
-        private int limit;
+public class CheckingsAccount extends BaseAccount {
+    private double membershipYears;
+    private double rateOfInterest;
 
-        public CheckingsAccount(double balance, int limit) {
-            super(balance);
-            this.limit = limit;
-        }
+    public CheckingsAccount(double balance, double membershipYears, double rateOfInterest){
+        super(balance);
+        this.membershipYears = membershipYears;
+        this.rateOfInterest = rateOfInterest;
+    }
 
-        @Override
-        public double withdraw(double amount) {
-            if ((getBalance() - amount) > (limit * -1)) {
-                System.out.println("Widthdrawn " + amount + " Euros");
-                return super.withdraw(amount);
-            } else {
-                System.out.println("Leider keine Deckung");
-                return 0;
-            }
-
-
-        }
+    public void accountInterest(){
+        double accountInterest = (this.getBalance() * this.rateOfInterest) * this.membershipYears;
+        System.out.println("Sie haben über die letzten " + this.membershipYears + " Jahre " + accountInterest + " Zinsen gezahlt.");
+        setBalance(getBalance() - accountInterest);
     }
 }
