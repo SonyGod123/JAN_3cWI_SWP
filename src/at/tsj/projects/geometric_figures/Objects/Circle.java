@@ -15,6 +15,4 @@ public class Circle extends Figure {
         double Area = Math.PI * Math.pow(r, 2);
         return Area;
     }
-
-
 }

@@ -14,4 +14,5 @@ public class Figure {
     public double getArea(){
         return 0;
     }
+
 }

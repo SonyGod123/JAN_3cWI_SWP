@@ -20,4 +20,5 @@ public class Square extends Figure {
         double Area = Math.pow(a,2);
         return Area;
     }
+
 }

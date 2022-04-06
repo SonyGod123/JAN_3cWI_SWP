@@ -30,4 +30,5 @@ public class Rectangle extends Figure {
         double Area = a*b;
         return Area;
     }
+
 }

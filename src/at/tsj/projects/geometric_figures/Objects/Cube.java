@@ -22,5 +22,4 @@ public class Cube extends Figure {
         return Area;
     }
 
-
 }
