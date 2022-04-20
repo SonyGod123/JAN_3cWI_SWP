@@ -1,7 +1,7 @@
 package at.tsj.projects.Fernbedienung;
 
-import at.tsj.projects.Fernbedienung.Objekte.Battery;
-import at.tsj.projects.Fernbedienung.Objekte.Fernbedienung;
+import at.tsj.projects.Fernbedienung.Objects.Battery;
+import at.tsj.projects.Fernbedienung.Objects.Fernbedienung;
 
 public class Main {
     public static void main(String[] args) {

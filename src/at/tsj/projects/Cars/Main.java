@@ -1,9 +1,9 @@
 package at.tsj.projects.Cars;
 
-import at.tsj.projects.Cars.Objekte.Car;
-import at.tsj.projects.Cars.Objekte.Engine;
-import at.tsj.projects.Cars.Objekte.Producer;
-import at.tsj.projects.Cars.Objekte.Truck;
+import at.tsj.projects.Cars.Objects.Car;
+import at.tsj.projects.Cars.Objects.Engine;
+import at.tsj.projects.Cars.Objects.Producer;
+import at.tsj.projects.Cars.Objects.Truck;
 
 public class Main {
     public static void main(String[] args) {

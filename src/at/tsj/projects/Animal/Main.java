@@ -1,7 +1,8 @@
 package at.tsj.projects.Animal;
 
-import at.tsj.projects.Animal.Objekt.Animal;
-import at.tsj.projects.Animal.Objekt.Zoo;
+import at.tsj.projects.Animal.Objects.Animal;
+import at.tsj.projects.Animal.Objects.Dog;
+import at.tsj.projects.Animal.Objects.Zoo;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,5 +13,12 @@ public class Main {
         zoo.addAnimal(a1);
         zoo.addAnimal(a2);
         zoo.printAnimals();
+
+        Dog d1 = new Dog(15,20);
+
+        zoo.addAnimal(d1);
+        zoo.printAnimals();
+
+        d1.bark();
     }
 }

@@ -1,4 +1,4 @@
-package at.tsj.projects.Fernbedienung.Objekte;
+package at.tsj.projects.Fernbedienung.Objects;
 
 public class Battery {
     private int Speicherstatus;

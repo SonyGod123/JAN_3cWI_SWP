@@ -1,4 +1,4 @@
-package at.tsj.projects.Cars.Objekte;
+package at.tsj.projects.Cars.Objects;
 
 public class Engine {
     public enum TYPE{DIESEL, BENZIN};

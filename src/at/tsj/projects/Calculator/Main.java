@@ -1,8 +1,8 @@
 package at.tsj.projects.Calculator;
 
-import at.tsj.projects.Calculator.Objekte.Calculator;
-import at.tsj.projects.Calculator.Objekte.Root_Calculator;
-import at.tsj.projects.Calculator.Objekte.Scientific_Calculator;
+import at.tsj.projects.Calculator.Objects.Calculator;
+import at.tsj.projects.Calculator.Objects.Root_Calculator;
+import at.tsj.projects.Calculator.Objects.Scientific_Calculator;
 
 public class Main {
     public static void main(String[] args) {

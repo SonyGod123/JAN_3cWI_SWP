@@ -1,4 +1,4 @@
-package at.tsj.projects.Animal.Objekt;
+package at.tsj.projects.Animal.Objects;
 
 public class Animal {
     private int weight;
@@ -24,4 +24,5 @@ public class Animal {
     public void setHeight(int height) {
         this.height = height;
     }
+
 }

@@ -1,4 +1,4 @@
-package at.tsj.projects.Calculator.Objekte;
+package at.tsj.projects.Calculator.Objects;
 
 public class Calculator {
     public double multiply(double a, double b) {

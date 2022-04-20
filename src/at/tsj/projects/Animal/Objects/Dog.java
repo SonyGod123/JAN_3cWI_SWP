@@ -1,4 +1,4 @@
-package at.tsj.projects.Animal.Objekt;
+package at.tsj.projects.Animal.Objects;
 
 public class Dog extends Animal{
 
@@ -9,4 +9,5 @@ public class Dog extends Animal{
     public void bark(){
         System.out.println("wuffff");
     }
+
 }

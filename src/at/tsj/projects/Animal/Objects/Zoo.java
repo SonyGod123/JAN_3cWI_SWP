@@ -1,4 +1,4 @@
-package at.tsj.projects.Animal.Objekt;
+package at.tsj.projects.Animal.Objects;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,4 +43,5 @@ public class Zoo {
     public void makeShow() {
         System.out.println("The show just has started");
     }
+
 }

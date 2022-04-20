@@ -1,4 +1,4 @@
-package at.tsj.projects.Accounts.Objekte;
+package at.tsj.projects.Accounts.Objects;
 
 public class LaendleAccount extends BaseAccount{
     private double membershipYears;

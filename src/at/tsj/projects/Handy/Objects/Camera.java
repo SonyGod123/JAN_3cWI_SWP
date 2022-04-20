@@ -1,4 +1,4 @@
-package at.tsj.projects.Handy.Objekte;
+package at.tsj.projects.Handy.Objects;
 
 public class Camera {
     private int id;

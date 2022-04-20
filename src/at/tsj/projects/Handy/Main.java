@@ -1,7 +1,7 @@
 package at.tsj.projects.Handy;
 
-import at.tsj.projects.Handy.Objekte.Camera;
-import at.tsj.projects.Handy.Objekte.Handy;
+import at.tsj.projects.Handy.Objects.Camera;
+import at.tsj.projects.Handy.Objects.Handy;
 
 public class Main {
     public static void main(String[] args) {

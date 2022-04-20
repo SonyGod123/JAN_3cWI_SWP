@@ -1,9 +1,9 @@
 package at.tsj.projects.Accounts;
 
-import at.tsj.projects.Accounts.Objekte.CheckingsAccount;
-import at.tsj.projects.Accounts.Objekte.CreditAccount;
-import at.tsj.projects.Accounts.Objekte.LaendleAccount;
-import at.tsj.projects.Accounts.Objekte.SavingsAccount;
+import at.tsj.projects.Accounts.Objects.CheckingsAccount;
+import at.tsj.projects.Accounts.Objects.CreditAccount;
+import at.tsj.projects.Accounts.Objects.LaendleAccount;
+import at.tsj.projects.Accounts.Objects.SavingsAccount;
 
 public class Main {
     public static void main(String[] args) {
