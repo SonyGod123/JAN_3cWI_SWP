@@ -13,8 +13,13 @@ public class Phone {
         this.sd_card = sd_card;
     }
 
-    public void makeCall(String number){
+    public void makeCall(String number) {
         this.sim.doCall(number);
+    }
+
+    public void takePicture(String extension,int size, String name) {
+        Phone_File file = this.camera.makePicture(extension, size, name);
+        this.sd_card.s
     }
 
 }
