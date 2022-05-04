@@ -19,7 +19,7 @@ public class Phone {
 
     public void takePicture(String extension,int size, String name) {
         Phone_File file = this.camera.makePicture(extension, size, name);
-        this.sd_card.s
+        this.sd_card.addFile(file);
     }
 
 }
