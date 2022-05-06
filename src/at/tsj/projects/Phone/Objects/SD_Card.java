@@ -17,10 +17,9 @@ public class SD_Card {
         this.files.add(file);
     }
 
-    public void printFiles(){
-        int numberofFiles = this.files.size();
-        for (int i = 0; i < numberofFiles; i++) {
-            System.out.println(this.files.get(i).getName() + " " + this.files.get(i).getExtension() + " " + this.files.get(i).getSize());
-        }
+    public List<Phone_File> getAllFiles(){
+       return files;
     }
+
+
 }

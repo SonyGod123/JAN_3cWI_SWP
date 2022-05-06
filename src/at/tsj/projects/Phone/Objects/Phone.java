@@ -22,4 +22,13 @@ public class Phone {
         this.sd_card.addFile(file);
     }
 
+    public void printAllFiles(){
+    int numberofFiles = this.sd_card.getAllFiles().size();
+        for (int i = 0; i < numberofFiles; i++) {
+            System.out.println(this.sd_card.getAllFiles().get(i).getName() + " " + this.sd_card.getAllFiles().get(i).getExtension() + " " + this.sd_card.getAllFiles().get(i).getSize());
+        }
+    }
+
+
+
 }

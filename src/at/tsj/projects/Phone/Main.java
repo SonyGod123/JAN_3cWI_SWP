@@ -14,7 +14,8 @@ public class Main {
         Phone phone = new Phone("black",sim,camera,sd_card);
         phone.makeCall("50033");
         phone.takePicture("jpg",20,"Test");
-        sd_card.printFiles();
+        phone_file.getInfo();
+        phone.printAllFiles();
     }
 
 }

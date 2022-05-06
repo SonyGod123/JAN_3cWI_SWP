@@ -11,6 +11,10 @@ public class Phone_File {
         this.name = name;
     }
 
+    public void getInfo(){
+        System.out.println(this.name + " " + this.extension + " " + this.size);
+    }
+
     public String getExtension() {
         return extension;
     }
