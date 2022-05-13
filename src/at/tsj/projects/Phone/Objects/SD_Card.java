@@ -14,12 +14,43 @@ public class SD_Card {
     }
 
     public void addFile(Phone_File file){
-        this.files.add(file);
+        if (getFreeSpace()>=file.getSize()) {
+            this.files.add(file);
+        } else {
+            System.out.println("Not enough storage");
+        }
     }
 
     public List<Phone_File> getAllFiles(){
-       return files;
+     return files;
     }
 
 
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public List<Phone_File> getFiles() {
+        return files;
+    }
+
+    public void setFiles(List<Phone_File> files) {
+        this.files = files;
+    }
+
+    public int getFreeSpace(){
+        int numberofFiles = this.getAllFiles().size();
+        int sizeOfFiles = 0;
+        for (int i = 0; i < numberofFiles; i++) {
+            sizeOfFiles = sizeOfFiles + this.getAllFiles().get(i).getSize();
+        }
+
+        int freeSpace = this.getCapacity() - sizeOfFiles;
+
+        return freeSpace;
+    }
 }

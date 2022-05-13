@@ -29,6 +29,10 @@ public class Phone {
         }
     }
 
+    public int getFreeSpace(){
+        return this.sd_card.getFreeSpace();
+    }
+
 
 
 }

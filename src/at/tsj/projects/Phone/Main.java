@@ -16,6 +16,7 @@ public class Main {
         phone.takePicture("jpg",20,"Test");
         phone_file.getInfo();
         phone.printAllFiles();
+        System.out.println(phone.getFreeSpace());
     }
 
 }
