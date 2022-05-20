@@ -11,4 +11,25 @@ public class SD_Card {
         this.capacity = capacity;
         this.pictures = new ArrayList<>();
     }
+
+    public void savePicture(Picture picture){
+        this.pictures.add(picture);
+
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public List<Picture> getPictures() {
+        return pictures;
+    }
+
+    public void setPictures(List<Picture> pictures) {
+        this.pictures = pictures;
+    }
 }

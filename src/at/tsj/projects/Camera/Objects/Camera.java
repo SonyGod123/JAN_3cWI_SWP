@@ -19,11 +19,26 @@ public class Camera {
         this.sd_cards.add(card);
     }
 
-    public void insertSDCard(SD_Card card){
+    public void insertSDCard(SD_Card card) {
         this.sd_cards.add(card);
     }
 
-    public void takePicture(){
+    public void takePicture(String name, String date, int size) {
+        System.out.println("Making Pictures");
+        Picture picture = new Picture(name, date, size);
+        //TODO select a sd card
+        boolean didSave = false;
+        for (SD_Card card : this.sd_cards) {
+            if (card.freeSpace()>picture.getSize()){
+                card.savePictures(picture);
+                didSave = true;
+            }
+        }
+
+        if (!didSave){
+            //
+        }
+        this.sd_cards.get(0).savePicture(picture);
         // capacity
         //
     }
