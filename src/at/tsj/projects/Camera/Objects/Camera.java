@@ -23,6 +23,13 @@ public class Camera {
         this.sd_cards.add(card);
     }
 
+    public void printAllSDCards(){
+       int size = this.sd_cards.size();
+        for (int i = 0; i < size; i++) {
+            System.out.println(this.sd_cards.get(i).getCapacity());
+        }
+    }
+
     public void takePicture(String name, String date, int size) {
         System.out.println("Making Pictures");
         Picture picture = new Picture(name, date, size);
@@ -30,18 +37,11 @@ public class Camera {
         boolean didSave = false;
         for (SD_Card card : this.sd_cards) {
             if (card.freeSpace()>picture.getSize()){
-                card.savePictures(picture);
+                card.savePicture(picture);
                 didSave = true;
+            } else {
+                System.out.println("Not enough space on any sd_card");
             }
         }
-
-        if (!didSave){
-            //
-        }
-        this.sd_cards.get(0).savePicture(picture);
-        // capacity
-        //
     }
-
-    //Notes: add Scanner in order to decide if I want to add a sd_card when i haven't got enough space
 }

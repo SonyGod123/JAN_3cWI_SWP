@@ -14,8 +14,17 @@ public class SD_Card {
 
     public void savePicture(Picture picture){
         this.pictures.add(picture);
-
     }
+
+    public int freeSpace(){
+        int size = 0;
+        for (Picture picture: pictures) {
+            size += this.pictures.size();
+        }
+        return size;
+    }
+
+
 
     public int getCapacity() {
         return capacity;
@@ -32,4 +41,6 @@ public class SD_Card {
     public void setPictures(List<Picture> pictures) {
         this.pictures = pictures;
     }
+
+
 }
