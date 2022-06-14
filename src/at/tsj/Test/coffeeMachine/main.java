@@ -23,7 +23,7 @@ public class main {
         boolean Vorgang = true;
         while (Vorgang) {
             System.out.println("Choose an option");
-            System.out.println("1. Turn On");
+            System.out.println("1. Omg i hass schwule");
             System.out.println("2. Size of coffee");
             System.out.println("3. Strength of coffee");
             System.out.println("4. Refill water");
